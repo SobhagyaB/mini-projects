@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(purple,white); 
+  background-image: url(https://images.pexels.com/photos/2314363/pexels-photo-2314363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+  overflow-x: hidden;
+
+  
+}
+img[alt="birds"]
+{
+  position: absolute;
+  z-index: -5;
+  right: 20px;
+  top: 10px;
+  height: 200px;
+  animation-name: bird;
+  animation-duration: 20s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+@keyframes bird{
+  0%{transform: translateX(500px);}
+  100%{transform: translateX(-1700px);}
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 550px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid; */
+
+}
+
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  width: 49.5%;
+  font-size: 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}

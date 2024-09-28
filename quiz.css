@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(white,rgb(21, 157, 21));
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    border: solid 1px;
+    padding: 20px;
+    border-radius: 25px;
+    border: transparent;
+}
+h1:hover
+{
+    color:white;
+    background-color: #28a745;
+}
+
+#quiz {
+    background-color: #fff;
+    background-image: linear-gradient(rgb(21, 157, 21),white);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    /* color: white; */
+}
+#browser
+{
+    color: white;
+
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label:hover {
+    background-color: #f1f1f1;
+}
+
+ input[type="radio"]:checked + label { /*This is a pseudo-class that applies styles only when the radio input is in the "checked" state */
+     background-color: #d1e7dd;
+    border-color: #0f5132; 
+ }
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+h2.result {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.reload-btn {
+    background-color: #007bff;
+    margin-top: 20px;
+}
+
+.reload-btn:hover {
+    background-color: #0056b3;
+}
